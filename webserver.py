@@ -29,7 +29,6 @@ while True:
 
         # Send the content of the requested file to the client
         for i in range(0, len(outputdata)):
-            print outputdata[i]
             connectionSocket.send(outputdata[i])
         connectionSocket.close()
 
